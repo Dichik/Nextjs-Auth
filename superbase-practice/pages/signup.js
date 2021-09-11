@@ -43,7 +43,7 @@ export default function SignUp() {
             .select()
             .match({phone: phone});
 
-        if(data) {
+        if(data.length !== 0) {
             alert('User already exists.');
             return;
         }
