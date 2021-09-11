@@ -1,0 +1,67 @@
+h1 {
+    position: absolute;
+}
+
+.Menu-Buttons {
+    position: absolute;
+    font-size: 25px;
+}
+
+.menu {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+}
+
+body {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+/*displaying a link as normal text*/
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.hr-1 {
+    position: absolute;
+    color: black;
+    border-top: 1px solid #8c8b8b;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    top: 50px;
+}
+
+.input-field {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    position: absolute;
+    outline: none;
+    height: 30px;
+    width: 300px;
+
+    padding-left: 30px;
+    top: 200px;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-49%, -49%);
+}
+
+.login-submit-button {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+    position: absolute;
+    outline: none;
+    height: 40px;
+    width: 335px;
+    text-align: center;
+    color: white;
+    background: black;
+    border: black;
+
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-49%, -49%);
+
+    top: 305px;
+}
