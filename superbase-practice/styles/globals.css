@@ -65,3 +65,14 @@ a {
 
     top: 305px;
 }
+
+.button-update {
+    position: absolute;
+    left: 565px;
+    top: 600px;
+    width: 340px;
+    height: 40px;
+
+    font-size: 15px;
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+}

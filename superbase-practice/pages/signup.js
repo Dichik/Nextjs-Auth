@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import supabase from "../utils/initSuperbase";
 import {useRouter} from "next/router";
-import Avatar from "./avatars/Avatar";
 
 export default function SignUp() {
     const [phone, setPhone] = useState('');
@@ -95,18 +94,6 @@ export default function SignUp() {
                    value={city}
                    onChange={(e) => (setCity(e.target.value))}
             />
-
-            <div className="form-widget">
-                <Avatar
-                    url={avatar_url}
-                    size={150}
-                    onUpload={(url) => {
-                        setAvatarUrl(url)
-                        updateProfile({ username, website, avatar_url: url })
-                    }}
-                />
-            </div>
-
             <button style={{
                 top:'550px'
             }} className={'login-submit-button'} onClick={checkInfo}>Sign Up</button>
