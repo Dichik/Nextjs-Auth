@@ -40,6 +40,10 @@ export default function Login() {
         alert('Wrong password');
     }
 
+    const thisFunc = () => {
+        router.push('/test');
+    }
+
     return (
         <div>
             <input className={'input-field'} placeholder={'Phone'}
@@ -54,6 +58,7 @@ export default function Login() {
                    onChange={(e) => (setPassword(e.target.value))}
             />
             <button className={'login-submit-button'} onClick={checkUser}>Login</button>
+            <button style={{position: 'absolute', top: '100px'}} onClick={thisFunc}>Click me</button>
         </div>
     );
 }

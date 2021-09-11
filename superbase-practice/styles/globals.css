@@ -65,3 +65,9 @@ a {
 
     top: 305px;
 }
+
+.sign-out-button {
+    position: absolute;
+    top: 5px;
+    right: -650px;
+}
