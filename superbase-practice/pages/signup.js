@@ -33,18 +33,27 @@ export default function SignUp() {
                     password: password
                 }
             ]);
-        router.push('/');
+        await router.push('/');
         alert('You were successfully registered!');
     }
 
-    const checkInfo = () => {
-        // check if there is no such phone
+    const checkInfo = async () => {
+        const {data} = await supabase
+            .from('users_info')
+            .select()
+            .match({phone: phone});
+
+        if(data) {
+            alert('User already exists.');
+            return;
+        }
+
         if(phone && password === password_2
             && password !== ''
             && first_name && last_name
             && country && city
             && password.length >= 6 && phone >= 6) {
-            addUser();
+            await addUser();
             return;
         }
         alert('There is an empty field or passwords are different');

@@ -6,7 +6,6 @@ export default function Profile() {
     const router = useRouter();
     const phone = require('./login').Phone;
     const isLogged = require('./login').in;
-    const [edit, setEdit] = useState('');
     const [loading, setLoading] = useState(true);
     const [disableButton, setDisableButton] = useState(true);
 
@@ -14,7 +13,6 @@ export default function Profile() {
     const [last_name, setLastName] = useState('');
     const [country, setCountry] = useState('');
     const [city, setCity] = useState('');
-    let info;
 
     const [new_first_name, setNewFirstName] = useState('');
     const [new_last_name, setNewLastName] = useState('');
@@ -75,7 +73,7 @@ export default function Profile() {
             .from('auth')
             .delete()
             .match({phone: phone});
-        router.push('/');
+        await router.push('/');
         alert('Your account was successfully deleted!');
     }
 

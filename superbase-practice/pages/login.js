@@ -58,7 +58,6 @@ export default function Login() {
                    onChange={(e) => (setPassword(e.target.value))}
             />
             <button className={'login-submit-button'} onClick={checkUser}>Login</button>
-            <button style={{position: 'absolute', top: '100px'}} onClick={thisFunc}>Click me</button>
         </div>
     );
 }
