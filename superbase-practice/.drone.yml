@@ -5,9 +5,9 @@ concurrency:
   limit: 2
 
 steps:
-  - name: "Test & Build"
-  image: node:10:11
-  commands:
+ - name: "Test & Build"
+   image: node:10.16.0
+   commands:
     - npm install
     - nom test
 
