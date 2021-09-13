@@ -2,15 +2,15 @@ kind: pipeline
 name: "Push on master"
 
 concurrency:
-        limit: 2
+  limit: 2
 
 steps:
-        - name: "Test & Build"
-        image: node:10:11
-        commands:
-                - npm install
-                - nom test
+  - name: "Test & Build"
+  image: node:10:11
+  commands:
+    - npm install
+    - nom test
 
 trigger:
-        event:
-        - push
+  event:
+    - push
